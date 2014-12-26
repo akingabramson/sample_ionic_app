@@ -1,2 +1,7 @@
 /* Empty. Add your own CSS if you like */
 
+#new-task {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
