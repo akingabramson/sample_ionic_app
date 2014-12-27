@@ -119,37 +119,4 @@ app.controller('TodoCtrl', function($scope, $timeout, $ionicModal, Projects, $io
     }
   });
 
-
-
-
-
-
-
-  $scope.tasks = [];
-  $ionicModal.fromTemplateUrl('new-task.html', function (modal) {
-    $scope.taskModal = modal
-  },
-  {
-    scope: $scope,
-    animation: 'slide-in-up'
-  });
-
-  $scope.createTask = function (task) {
-    $scope.tasks.push({
-      title: task.title
-    });
-
-    $scope.taskModal.hide();
-    task.title = "";
-  };
-
-  $scope.newTask = function () {
-    $scope.taskModal.show()
-  }
-
-  $scope.closeNewTask = function () {
-    $scope.taskModal.hide()
-  }
-
-
 });
